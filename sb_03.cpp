@@ -4,6 +4,12 @@ public:
 	//...
 	int a{}, b{};
 	friend void f2();
+	void foo()
+	{
+		A ax;
+
+		auto [x, y, z] = ax; //valid since C++ 20
+	}
 private:
 	int c{};
 };
