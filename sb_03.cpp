@@ -19,6 +19,6 @@ void f2()
 {
 	A ax;
 
-	auto [x, y, z] = ax; //valid
+	auto [x, y, z] = ax; //valid since C++ 20
 	//...
 }
