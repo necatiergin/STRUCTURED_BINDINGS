@@ -1,3 +1,5 @@
+// structured bindings for C arrays
+
 #include <iostream>
 
 int main()
