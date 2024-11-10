@@ -1,3 +1,5 @@
+// structure binding for pod types
+
 #include <iostream>
 
 struct Data {
