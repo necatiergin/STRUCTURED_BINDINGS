@@ -2,11 +2,11 @@
 #include <string>
 #include <iostream>
 
-void foo()
+void foo(const std::string& name)
 {
 	std::set<std::string> myset{ "mahmut", "ali", "yesim", "nur", "deniz" };
 
-	auto p = myset.insert("yesim");
+	auto p = myset.insert(name);
 	if (p.second) {
 		std::cout << "inserted elem: " << p.second << '\n';
 
@@ -16,11 +16,11 @@ void foo()
 	}
 }
 
-void bar()
+void bar(const std::string& name)
 {
 	std::set<std::string> myset{ "mahmut", "ali", "yesim", "nur", "deniz" };
 
-	if (auto [iter, flag] = myset.insert("yesim"); flag) {
+	if (auto [iter, flag] = myset.insert(name); flag) {
 		std::cout << "inserted elem: " << *iter << '\n';
 	}
 	else {
@@ -31,6 +31,8 @@ void bar()
 
 int main()
 {
-	foo();
-	bar();
+	foo("necati");
+	bar("necati");
+	foo("nur");
+	bar("nur");
 }
