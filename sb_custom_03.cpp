@@ -101,8 +101,6 @@ decltype(auto) get(Employee&& c) {
 	}
 }
 
-
-
 int main()
 {
 	Employee e{ "necati", "ergin", 32487 };
